@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Denial Letter Tracker — Free Insurance Appeal Kit</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.5;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 18px;
+    font-size: 12px;
+  }
+  .screen-only { display: block; }
+  .print-only { display: none; }
+  header {
+    border-bottom: 3px double #1a1a1a;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+  }
+  h1 { font-size: 20px; margin: 0 0 4px 0; }
+  .subtitle { font-size: 11px; color: #444; margin: 0 0 6px 0; }
+  .disclaimer {
+    font-size: 8.5px;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 7px;
+    margin-bottom: 14px;
+  }
+  table.tracker {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 18px;
+  }
+  table.tracker th {
+    background: #e8e8e8;
+    border: 1px solid #777;
+    padding: 5px 6px;
+    font-size: 9px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.tracker td {
+    border: 1px solid #777;
+    padding: 8px 6px;
+    height: 42px;
+    vertical-align: top;
+    font-size: 10px;
+  }
+  table.tracker td input {
+    width: 100%;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    background: transparent;
+    outline: none;
+  }
+  table.tracker tr:nth-child(even) td { background: #fafafa; }
+  .blank-line {
+    border-bottom: 1px solid #1a1a1a;
+    height: 20px;
+  }
+  .section {
+    margin-bottom: 16px;
+    page-break-inside: avoid;
+  }
+  .section h2 {
+    font-size: 13px;
+    border-bottom: 1px solid #1a1a1a;
+    padding-bottom: 4px;
+    margin: 0 0 8px 0;
+  }
+  ul { margin: 4px 0 8px 0; padding-left: 18px; }
+  li { margin-bottom: 3px; font-size: 10px; }
+  .footer {
+    margin-top: 20px;
+    border-top: 1px solid #1a1a1a;
+    padding-top: 8px;
+    font-size: 8.5px;
+    color: #444;
+  }
+  .actions {
+    margin: 14px 0;
+  }
+  button {
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  button:hover { background: #444; }
+  button.print { background: #3a3a3a; }
+  @media print {
+    body { font-size: 10px; padding: 0; }
+    .screen-only { display: none !important; }
+    .print-only { display: block !important; }
+    table.tracker td { height: 34px; }
+    table.tracker td input { border-bottom: 1px solid #1a1a1a; }
+    .actions { display: none; }
+    header { border-bottom: 3px double #1a1a1a; }
+    .disclaimer { background: #fff; border: 1px solid #1a1a1a; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Denial Letter Tracker</h1>
+  <p class="subtitle">Free Insurance Appeal &amp; Medical Bill Dispute Kit &mdash; Asdale Dynamics, LLC</p>
+  <p class="subtitle">Education only &mdash; not legal advice. Fill in, print, or save as PDF. Nothing is saved online.</p>
+</header>
+
+<div class="disclaimer screen-only">
+  <strong>Not legal advice.</strong> This tracker is for educational purposes only. Insurance rules and appeal deadlines vary by state and health plan. For help with a specific denial, contact your insurer, a patient advocate, your state insurance department, or a qualified attorney.
+</div>
+
+<div class="section">
+  <h2>How to use</h2>
+  <ul>
+    <li>Fill in one row per denial letter you receive.</li>
+    <li>Note the appeal deadline (usually 30&ndash;180 days from the denial date, depending on your plan and state).</li>
+    <li>Mark each step as you complete it: letter received, appeal submitted, response received, resolved.</li>
+    <li>Keep copies of every letter, EOB, and your appeal in a folder (physical or digital).</li>
+  </ul>
+</div>
+
+<div class="actions screen-only">
+  <button onclick="window.print()">Print</button>
+  <button class="print" onclick="savePDF()">Save as PDF</button>
+</div>
+
+<table class="tracker">
+  <thead>
+    <tr>
+      <th style="width:3%">#</th>
+      <th style="width:8%">Date of denial letter</th>
+      <th style="width:10%">Insurer / plan</th>
+      <th style="width:8%">Member ID</th>
+      <th style="width:9%">Claim #</th>
+      <th style="width:13%">Service / procedure</th>
+      <th style="width:9%">Date of service</th>
+      <th style="width:8%">Billed amount</th>
+      <th style="width:12%">Reason for denial</th>
+      <th style="width:9%">Appeal deadline</th>
+      <th style="width:9%">Appeal submitted?</th>
+      <th style="width:9%">Appeal date</th>
+      <th style="width:10%">Response received?</th>
+      <th style="width:10%">Outcome / status</th>
+      <th style="width:10%">Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+    <tr><td>2</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+    <tr><td>3</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+    <tr><td>4</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+    <tr><td>5</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+  </tbody>
+</table>
+
+<div class="section">
+  <h2>Common denial reasons to look for</h2>
+  <ul>
+    <li>Service not covered / not a covered benefit</li>
+    <li>Not medically necessary</li>
+    <li>Prior authorization not obtained</li>
+    <li>Out-of-network provider</li>
+    <li>Missing or incorrect coding</li>
+    <li>Duplicate claim</li>
+    <li>Timely filing limit exceeded</li>
+    <li>Benefit limit reached</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Tips</h2>
+  <ul>
+    <li>Call the number on the back of your insurance card and ask for the appeals department.</li>
+    <li>Ask for a copy of your full claim file and the plan's medical policy.</li>
+    <li>Keep a phone log: date, time, who you spoke with, and what they said.</li>
+    <li>Send appeals by certified mail with return receipt requested, or through your insurer's secure member portal with a confirmation.</li>
+    <li>If your internal appeal is denied, you may have the right to an external review.</li>
+  </ul>
+</div>
+
+<div class="footer">
+  Free Insurance Appeal &amp; Medical Bill Dispute Kit &mdash; Asdale Dynamics, LLC. Copyright (c) 2026 Asdale Dynamics, LLC. Education only &mdash; not legal advice.
+</div>
+
+<script>
+function savePDF(){
+  window.print();
+}
+</script>
+</body>
+</html>
